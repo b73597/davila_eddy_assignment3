@@ -17,5 +17,10 @@ console.log ("I play guitar twice a month in " + myHome + "; during summer and w
 console.log ("I have " + myNumber + " guitars");
 console.log ("Believe it or not, its " + hasGuitar + " that I have " + myNumber + " guitars.");
 
-
-
+//Added procedure to project three.
+//Procedure
+var seasons = function(summer, winter){
+var whichSeason = summer + winter;
+console.log("I will perform " + whichSeason + " sets; " + setTime + " minutes each.");
+};
+seasons(1,1); 
