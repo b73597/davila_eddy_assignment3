@@ -129,28 +129,45 @@ console.log("The new rule is " + rules.followRules());
 var agentDemands = { "demand1": "Dont drink before the show ",
 					 "demand2": "Practice at least twice a week ", 
 					 "demand3": "make one album in 10 days",
-					 "days"   : 10};
-					 
-					 console.log("The agent's expectations of the band are: " + agentDemands);
+					 "days"   : 10
+					 };
+console.log("The agent's expectations of the band are: " + agentDemands);
 var days = 10;
-
 while (days > 0) {
-console.log(days + " days till recording begins");
-console.log(days + " days to write new songs");
-console.log("Finish song and move on to the next");
+console.log(days + " days till recording ends");
+console.log(days + " days to record new songs");
+console.log("Finish song and record the next");
 
 
 days = days - 1;
 
 if (days > 0) {
-console.log(days + " Recording cannot begin");
+console.log(days + " songs completed");
 
 }else {
-	console.log( "Recording Begins");
+	console.log( "Recording ends with a full album");
 
 	}
 }
-console.log("Let's get to work");
+console.log("The band has completed the album. Let's get back to our agent, he has set up the euroTour in Germany, France and Spain.");
+
+
+
+//String Method
+var europeShows = {
+	
+	"Germany": "Berlin, ",
+	"France" : "Nimes, ",
+	"Spain"  : "and Barcelona ",
+	"euroTour": function(){
+				var totalCountries = europeShows.Germany + europeShows.France + europeShows.Spain;
+				return totalCountries;
+	}
+
+
+};
+
+console.log("The euroTour is " + europeShows.euroTour());
 
 
 
@@ -159,7 +176,37 @@ console.log("Let's get to work");
 
 
 
-// We will add one more rules for every 3 mistakes made. 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
