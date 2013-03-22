@@ -31,7 +31,7 @@ seasons(1,1);
 // Conditional
 
 if (hasGuitar === true) {
-   if (myNumber <= 222) { 
+   if (myNumber <= 2) { 
       myNumber = myNumber + 1;
       console.log( "If I had " + myNumber + ", I'll get signed");
     } else { 
@@ -45,7 +45,6 @@ if (hasGuitar === true) {
 		}
 };
 
-// Array Function
 var getSigned = function (r) {
 	var signature = r + guitarGoal;
 	return signature;
@@ -140,18 +139,13 @@ console.log("Finish song and record the next");
 
 
 days = days - 1;
-
-if (days > 0) {
-console.log(days + " songs completed");
-
+	if (days > 0) {
+	console.log(days + " songs completed");
 }else {
-	console.log( "Recording ends with a full album");
-
+	console.log( "Recording succesful");
 	}
 }
-console.log("The band has completed the album. Let's get back to our agent, he has set up the euroTour in Germany, France and Spain.");
-
-
+console.log("The band has completed the album. Let's get back to our agent, he has set up a tour in Germany, France and Spain.");
 
 //String Method
 var europeShows = {
@@ -163,11 +157,8 @@ var europeShows = {
 				var totalCountries = europeShows.Germany + europeShows.France + europeShows.Spain;
 				return totalCountries;
 	}
-
-
 };
-
-console.log("The euroTour is " + europeShows.euroTour());
+console.log("While there, we should also play the euroTour Festival which takes places in three cities in those countries. " + europeShows.euroTour());
 
 
 
