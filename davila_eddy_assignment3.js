@@ -18,6 +18,8 @@ console.log ("I play guitar twice a month in " + myHome + ".");
 console.log ("I have " + myNumber + " guitars");
 console.log ("If I get more than  " + myNumber + " guitars I could play more shows and get signed.");
 
+
+
 //OLD PROCEDURE:
 //Simple Math
 
@@ -32,8 +34,7 @@ seasons("Winter","Summer"); */
 // Method: New procedure added to code.
 var myProcedure = function (x,y){
     var outcome = x + y;
-    console.log(" my outcome is" + outcome);
-    
+    console.log(" my outcome Isis" + outcome);
 };
 
 
@@ -47,11 +48,11 @@ if (hasGuitar === true) {
       console.log("I won't get signed if I have any less than" + myNumber);
     }
 } else {
-      if (myName === "Ed Davila") { 
+    if (myName === "Ed Davila") { 
          console.log("My name is " + myName + ", and I have guitars")
       } else { 
-        console.log("My name is " + myName + ", and I do not have guitars");
-		}
+	console.log("My name is " + myName + ", and I do not have guitars");
+	}
 };
 
 
@@ -72,9 +73,10 @@ gotSigned(myName , signature, "Blade Records" );*/
 var newFunction = function (first, second, third){
 	var outcome = first + second + third;
 	return outcome;
-
 };
-console.log(newFunction("Omar", "Cheryl","badder"));
+console.log(newFunction("Omar", "Cheryl","Chris"));
+
+
 
 //JSON
 var bladeRecords = {
@@ -107,10 +109,8 @@ var agentJason = {
 	"contract" : function(){ //method accessor
 					var agentJob = agentJason.gigs + agentJason.promotion + agentJason.budget;
 					return agentJob;
-	
 	}// end method
 };
-	
 console.log("Our new agent has to get me and the band into " +  agentJason.contract());
 
 
@@ -122,20 +122,19 @@ var rules = {
 	"followRules": function (){
 			var mustFollow = rules.rule1 + rules.rule2 + rules.rule3;
 			return mustFollow;
-	},// End of followRules method.
-	"changeRules": function(newRule){ // Method Mutator 
+			},// End of followRules method.
+			"changeRules": function(newRule){ // Method Mutator 
 			rules.rule3 = newRule;
 	}
-
 }; // end of rules object
 console.log("The new agent has 3 rules to follow: " + rules.followRules());
-
 
 
 //Copy of "var rules"
 var newRules = rules;
 rules.changeRules("Leave your ego outside");
 console.log("The new rule is " + rules.followRules()); 
+return newRules;
 
 
 //Number Function
@@ -157,15 +156,15 @@ var days = 10;
 days = days - 1;
 	if (days > 0) {
 	console.log(days + " songs completed");
-}else {
+	}else {
 	console.log( "Recording succesful");
 	}
 }
 console.log("The band has completed the album. Let's get back to our agent, he has set up a tour in Germany, France and Spain.");
 
+
 //String Method
 var europeShows = {
-	
 	"Germany": "Berlin, ",
 	"France" : "Nimes, ",
 	"Spain"  : "and Barcelona ",
@@ -175,7 +174,6 @@ var europeShows = {
 	}
 };
 console.log("While there, we should also play the euroTour Festival which takes places in three cities in those countries. " + europeShows.euroTour());
-
 
 
 
