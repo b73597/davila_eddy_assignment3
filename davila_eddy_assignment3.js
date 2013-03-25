@@ -70,12 +70,17 @@ var signature = getSigned(2);
 gotSigned(myName , signature, "Blade Records" );*/
 
 //NEW FUNCTION
-var newFunction = function (first, second, third){
-	var outcome = first + second + third;
-	return outcome;
+var getPromoted = function (r) {
+	var promoted = r;
+	return promoted;
 };
-console.log(newFunction("Omar", "Cheryl","Chris"));
-
+var gotPromoted = function (x,y,z){
+		console.log(x + " is getting promotyed by " 
+		+ y + " and will be going to  " 
+		+ z + " to record next album");
+}
+var promoted = getPromoted("Ed", "nuclear blast","China");
+gotPromoted(myName , promoted, "to lead guitar" );
 
 
 //JSON
@@ -134,7 +139,7 @@ console.log("The new agent has 3 rules to follow: " + rules.followRules());
 var newRules = rules;
 rules.changeRules("Leave your ego outside");
 console.log("The new rule is " + rules.followRules()); 
-return newRules;
+
 
 
 //Number Function
