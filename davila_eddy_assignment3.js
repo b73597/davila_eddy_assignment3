@@ -18,14 +18,23 @@ console.log ("I play guitar twice a month in " + myHome + ".");
 console.log ("I have " + myNumber + " guitars");
 console.log ("If I get more than  " + myNumber + " guitars I could play more shows and get signed.");
 
-//Added procedure to project three.
+//OLD PROCEDURE:
 //Simple Math
 
-var seasons = function(summer, winter){
-var whichSeason = summer + winter;
+/* var seasons = function(x, y){
+var whichSeason = x + y;
 console.log("I will perform " + whichSeason + " sets; " + setTime + " minutes each.");
 };
-seasons(1,1); 
+seasons("Winter","Summer"); */
+
+
+
+// Method: New procedure added to code.
+var myProcedure = function (x,y){
+    var outcome = x + y;
+    console.log(" my outcome is" + outcome);
+    
+};
 
 
 // Conditional
@@ -45,16 +54,27 @@ if (hasGuitar === true) {
 		}
 };
 
-var getSigned = function (r) {
+
+// OLD FUNCTION
+/*var getSigned = function (r) {
 	var signature = r + guitarGoal;
 	return signature;
 };
 var gotSigned = function (name, signature, message){
-	console.log(name + " has been signed by " + message + ". A local agent has been assigned to his band with " + signature + " major benefit choices");
+		console.log(name + " has been signed by " 
+		+ message + ". A local agent has been assigned to his band with " 
+		+ signature + " major benefit choices");
 }
 var signature = getSigned(2);
-gotSigned(myName , signature, "Blade Records" );
+gotSigned(myName , signature, "Blade Records" );*/
 
+//NEW FUNCTION
+var newFunction = function (first, second, third){
+	var outcome = first + second + third;
+	return outcome;
+
+};
+console.log(newFunction("Omar", "Cheryl","badder"));
 
 //JSON
 var bladeRecords = {
@@ -108,22 +128,17 @@ var rules = {
 	}
 
 }; // end of rules object
-
 console.log("The new agent has 3 rules to follow: " + rules.followRules());
 
 
 
 //Copy of "var rules"
-
 var newRules = rules;
 rules.changeRules("Leave your ego outside");
 console.log("The new rule is " + rules.followRules()); 
 
 
 //Number Function
-
-
-
 // The agent's demand is that I make an album in 10 days.
 var agentDemands = { "demand1": "Dont drink before the show ",
 					 "demand2": "Practice at least twice a week ", 
@@ -131,11 +146,12 @@ var agentDemands = { "demand1": "Dont drink before the show ",
 					 "days"   : 10
 					 };
 console.log("The agent's expectations of the band are: " + agentDemands);
+
 var days = 10;
-while (days > 0) {
-console.log(days + " days till recording ends");
-console.log(days + " days to record new songs");
-console.log("Finish song and record the next");
+	while (days > 0) {
+	console.log(days + " days till recording ends");
+	console.log(days + " days to record new songs");
+	console.log("Finish song and record the next");
 
 
 days = days - 1;
